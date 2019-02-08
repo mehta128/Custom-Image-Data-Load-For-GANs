@@ -5,10 +5,10 @@ This repository is a tutorial for learning how to laod your custom image dataset
 
 Requirement: Pytorch, torchvision
 
-Input: .png, .jpg images
+Input: .png, .jpg images, stored in data.zip
 
 
-Output: Transferring the images to tensor, do the training of network, dataprocessing, classification etc.(not shown) and display the images. 
+Output: Transferring the images to tensor, do the training of network, dataprocessing, classification etc.(not shown) and display the images. Sample output is shown in output.png
 
 
 
