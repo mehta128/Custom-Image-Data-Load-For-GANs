@@ -8,7 +8,7 @@ Requirement: Pytorch, torchvision
 Input: .png, .jpg images, stored in data.zip
 
 
-Output: Transferring the images to tensor, do the training of network, dataprocessing, classification etc.(not shown) and display the images. Sample output is shown in output.png
+Output: Transferring the images to tensor, do the training of network, dataprocessing, classification etc.(not shown) and plot the images on graph. Sample output is shown in output.png
 
 
 
