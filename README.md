@@ -1,6 +1,6 @@
 # Custom-Image-Data-Load-For-GANs
 
-This repository is a tutorial for learning how to laod your custom image dataset for GAN network.
+This repository is a tutorial for learning how to load your custom image dataset for GAN network.
 
 
 Requirement: Pytorch, torchvision
