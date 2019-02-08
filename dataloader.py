@@ -1,14 +1,12 @@
-from __future__ import print_function, division
-import os
 import torch
 import pandas as pd
-from skimage import io, transform
 import numpy as np
 import matplotlib.pyplot as plt
 from torch.utils.data import Dataset, DataLoader
 import torchvision
 from torchvision import transforms, utils
 
+#Torchvision to load dataset, and transform the dataset according to your requirement.
 data_transform = transforms.Compose([
         transforms.RandomResizedCrop(256),
         transforms.ToTensor(),
@@ -31,13 +29,23 @@ def load_dataset():
     return train_loader
 
 
-
+#Use iterator to iterate over the datasets
 train_iter = iter(load_dataset())
+
+#Once you have your data in form of tensors, train your network or do your desired goal.
+
 print(type(train_iter))
 
 images, labels = train_iter.next()
 print('images shape on batch size = {}'.format(images.size()))
 print('labels shape on batch size = {}'.format(labels.size()))
+
+
+# The generated images from GANs will be in tensors, transpose them to plot it on graph
+grid = torchvision.utils.make_grid(images)
+plt.imshow(grid.numpy().transpose((1, 2, 0)))
+plt.axis('off')
+plt.show()
 
 grid = torchvision.utils.make_grid(images)
 # plt.imshow((grid * 255).astype(np.uint8))
